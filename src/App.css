@@ -2,37 +2,102 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ********************************** CONTAINER ***************************************** */
+
+.container-main > aside {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  background-color: antiquewhite;
+  padding: 1rem;
+  border: 3px solid #d3dbe4;
+  border-radius: 0.375em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form */
+
+input, select {
+    display: inline-block;
+    width: 2.7rem;
+    padding: 0.575rem;
+    outline: none;
+    border: 3px solid #d3dbe4;
+    border-radius: 0.375em;
+    box-shadow: none;
+    background-color: #FFFFFF;
+    color: #7B8898;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2857142857;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    margin-right: 2rem;
+}
+
+select {
+  width: auto;
+}
+
+.btn_generate, .btn_copy {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.375em;
+    padding: 1em 1em 0.875em;
+    background-color: #FF6A67;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-size: 0.875em;
+    font-weight: bolder;
+    line-height: 1.2857142857;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+}
+
+.btn_generate:hover, .btn_copy:hover {
+  opacity: 0.8;
+}
+
+.btn_copy {
+  display: inline-flex;
+}
+
+.btn_copy > span {
+  margin-right: .6rem;
+}
+
+/* Box-results */
+.container-data {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  background-color: rgb(249, 249, 249);
+  padding: 1rem;
+  border: 3px solid #d3dbe4;
+  border-top: none;
+  border-radius: 0.375em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.container-data > aside > p {
+  color: #7B8898;
+  text-align: justify;
+  font-size: 1.1875rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
